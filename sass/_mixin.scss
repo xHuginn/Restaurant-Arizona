@@ -1,0 +1,48 @@
+// Mixin Responsive
+
+@mixin mobile {
+    @media screen and (max-width: 425px) {
+        &{ @content; }
+    }
+}
+
+@mixin tablet {
+    @media screen and (min-width: 426px) and (max-width: 1023px) {
+        &{ @content; }
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: 1024px) and (max-width: 1439px) {
+        &{ @content; }
+    }
+}
+
+@mixin desktop_4k {
+    @media screen and (min-width: 1440px) {
+        &{ @content; }
+    }
+}
+
+
+// Mixin Menu
+
+@mixin menu_enchantee {
+    color: #791717;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+@mixin menu_french {
+    color: #e48435;
+    font-family: 'Great Vibes', cursive;
+}
+
+@mixin menu_delice {
+    color: #0e2b8a;
+    font-family: 'Dancing Script', cursive;
+}
+
+@mixin menu_palet {
+    color: #32850b;
+    font-family: 'Satisfy', cursive;
+}

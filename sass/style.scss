@@ -1,0 +1,296 @@
+// Police 
+@font-face
+{
+    font-family: 'BallparkWeiner';
+    src: url('polices/ballpark.eot');
+    src: url('polices/ballpark.eot?#iefix') format('embedded-opentype'),
+         url('polices/ballpark.woff') format('woff'),
+         url('polices/ballpark.ttf') format('truetype'),
+         url('polices/ballpark.svg#BallparkWeiner') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Dayrom';
+    src: url('polices/dayrom.eot');
+    src: url('polices/dayrom.eot?#iefix') format('embedded-opentype'),
+         url('polices/dayrom.woff') format('woff'),
+         url('polices/dayrom.ttf') format('truetype'),
+         url('polices/dayrom.svg#Dayrom') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// Général
+
+@import "_variable.scss";
+@import "_mixin.scss";
+
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #000;
+    color: $text_color;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+img {
+    height: 60vh;
+    width: 100%;
+}
+
+h2 {
+    font-family: 'Shadows Into Light', cursive;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: $text_color;
+}
+
+.max-width {
+    @include desktop {
+        max-width: 1300px;
+        text-align: center;
+        margin: auto;
+    }
+    @include desktop_4k {
+        max-width: 1300px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+}
+
+// Header
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Kaushan Script', cursive;
+    position: fixed;
+    background-color: #000;
+    height: 64px;
+    width: 100%;
+}
+
+header h1 {
+    margin-left: 35px;
+    align-self: center;
+    cursor: default;
+}
+
+nav {
+    align-self: center;
+
+    & ul {
+        display: flex;
+        
+        margin-right: 35px;
+        // padding: 20px;
+    }
+
+    & li {
+        margin-left: 25px;
+        position: relative;
+    }
+    
+    .active {
+        background-color: $bg_color;
+    }
+
+    .btn {
+        position: relative;
+        color: $text_color;
+        display: block;
+        font-family: "Anton", sans-serif;
+        text-decoration: none;
+        margin: 30px 0;
+        border: 2px solid $bg_color;
+        padding: 18px 10px;
+        text-transform: uppercase;
+        overflow: hidden;
+    }
+    
+    & .btn::after {
+        content: "";
+        background: $bg_color;
+        position: absolute;
+        top: 50%;
+        left: 52%;
+        transform: translate(-50%, -50%) rotate(25deg); /* permet de déplacer la ligne qui bouge */
+        z-index: -1;
+        transition: all 0.6s;
+        width: 150%; // largeur de l'animation
+        height: 0%; //hauteur point de départ 0 = invisible
+    }
+    
+    & .btn:hover::after {
+        height: 275%;
+    }
+
+}
+
+
+// Possibilities
+
+
+.possibilities {
+    background: url('/img/fond_red.jpg') no-repeat fixed;
+    background-size: cover;
+    height: 450px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Permanent Marker', sans-serif;
+}
+
+.choice_1 {
+    background-image: url('/img/food.jpg');
+    opacity: 0.5;
+    content: "";
+    transition: all 0.6s;
+    transform: scale(1);
+
+    &:hover {
+        opacity: 1;
+        transform: scale(1.15);
+    }
+}
+
+.choice_2 {
+    background-image: url('/img/party.jpg');
+    opacity: 0.5;
+    content: "";
+    transition: all 0.6s;
+    transform: scale(1);
+
+    &:hover {
+        opacity: 1;
+        transform: scale(1.15);
+    }
+}
+
+.choice_1, .choice_2 {
+    height: 325px;
+    width: 350px;
+    background-color: #7e0b0b99;
+    margin: 50px auto;
+    border-radius: 38px 38px 38px 38px;
+    -moz-border-radius: 38px 38px 38px 38px;
+    -webkit-border-radius: 38px 38px 38px 38px;
+    border: 3px solid #000000;
+    -webkit-box-shadow: 8px 7px 19px -3px #000000bd;
+    -moz-box-shadow: 8px 7px 19px -3px #000000bd;
+    box-shadow: 8px 7px 19px -3px #000000bd;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    & h2 {
+        color: #000;
+        margin-top: 5px;
+        font-size: 2rem;
+        cursor: default;
+    }
+
+    & p {
+        margin: 80px 0 35px 0;
+        color: #942c0c;
+        font-size: 1.5rem;
+        cursor: default;
+    }
+
+    & button {
+        font-family: 'Permanent Marker', sans-serif;
+        width: 120px;
+        align-self: center;
+        padding: 15px 9px;
+        background: #a31010;
+        color: #d6c1c1;
+        font-size: 1rem;
+        border: none;
+        border-radius: 15px;
+        -moz-border-radius: 15px;
+        -webkit-border-radius: 15px;
+        box-shadow: 8px 7px 19px -3px #000000bd;
+        cursor: pointer;
+    }
+
+    & button:hover {
+        background: #b40808;
+    }
+}
+
+
+// A propos
+
+.propos {
+    background-image: url('/img/sushi.jpg');
+    height: 700px;
+    
+    
+    & h3, p {
+        margin: auto;
+        
+    }
+
+    & h3 {
+        font-family: 'Anton', sans-serif;
+        letter-spacing: 3px;
+        padding: 25px 0;
+        width: 26%;
+        margin-bottom: 35px;
+        font-size: 2rem;
+        border-bottom: 2px solid white;
+    }
+
+    & p {
+        width: 65%;
+        text-align: justify;
+        letter-spacing: 1px;
+        padding: 20px 25px;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+}
+
+// footer 
+
+
+footer {
+    width: 100%;
+    background-color: #000;
+    color: $text_color;
+    text-align: center;
+    cursor: default;
+    margin-top: 25px;
+
+    & h6, address, p {
+        margin: 15px;
+    }
+
+    & h6 {
+        font-size: 2rem;
+        font-family: 'Kaushan Script', cursive;
+    }
+}
+
+
+
+
+
+
+
+
