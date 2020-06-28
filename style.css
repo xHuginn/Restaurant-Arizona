@@ -317,6 +317,14 @@ nav .btn:hover::after {
   color: #a31010;
 }
 
+.avis img {
+  width: 550px;
+}
+
+.galerie img {
+  width: 550px;
+}
+
 footer {
   width: 100%;
   background-color: black;
