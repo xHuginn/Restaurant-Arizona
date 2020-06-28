@@ -65,7 +65,7 @@ a {
         margin: auto;
     }
     @include desktop_4k {
-        max-width: 1300px;
+        max-width: 1500px;
         text-align: center;
         justify-content: center;
         align-items: center;
@@ -84,6 +84,7 @@ header {
     background-color: #000;
     height: 64px;
     width: 100%;
+    z-index: 1;
 }
 
 header h1 {
@@ -97,9 +98,7 @@ nav {
 
     & ul {
         display: flex;
-        
         margin-right: 35px;
-        // padding: 20px;
     }
 
     & li {
@@ -143,26 +142,43 @@ nav {
 
 }
 
+// Accroche
+
+.accroche {
+    height: 90px;
+    font-size: 1.7rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Kaushan Script', 'Arial Narrow', Arial, sans-serif;
+    color: #a31010;
+    cursor: default;
+}
 
 // Possibilities
 
 
 .possibilities {
-    background: url('Restaurant-Arizona/img/fond_red.jpg') no-repeat fixed;
+    background: url('./img/fond_red.jpg') no-repeat fixed;
     background-size: cover;
     height: 450px;
-    margin-top: 25px;
     display: flex;
     justify-content: space-between;
     font-family: 'Permanent Marker', sans-serif;
+    cursor: default;
+    
 }
 
 .choice_1 {
-    background-image: url('Restaurant-Arizona/img/food.jpg');
+    background-image: url('/img/choice_1.jpg');
+    background-position: center;
     opacity: 0.5;
     content: "";
     transition: all 0.6s;
     transform: scale(1);
+    
+    
 
     &:hover {
         opacity: 1;
@@ -171,7 +187,8 @@ nav {
 }
 
 .choice_2 {
-    background-image: url('xHuginn/Restaurant-Arizona/img/party.jpg');
+    background-image: url('/img/pizza.jpg');
+    background-position: center;
     opacity: 0.5;
     content: "";
     transition: all 0.6s;
@@ -188,29 +205,28 @@ nav {
     width: 350px;
     background-color: #7e0b0b99;
     margin: 50px auto;
-    border-radius: 38px 38px 38px 38px;
-    -moz-border-radius: 38px 38px 38px 38px;
-    -webkit-border-radius: 38px 38px 38px 38px;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
     border: 3px solid #000000;
-    -webkit-box-shadow: 8px 7px 19px -3px #000000bd;
-    -moz-box-shadow: 8px 7px 19px -3px #000000bd;
-    box-shadow: 8px 7px 19px -3px #000000bd;
+    -webkit-box-shadow: inset 200px 200px 300px 200px rgba(0, 0, 0, 0.233);
+    -moz-box-shadow: inset 200px 200px 300px 200px rgba(0, 0, 0, 0.233);
+    box-shadow: inset 200px 200px 300px 200px rgba(0, 0, 0, 0.233);
     text-align: center;
     display: flex;
     flex-direction: column;
+    
 
     & h2 {
-        color: #000;
         margin-top: 5px;
         font-size: 2rem;
-        cursor: default;
+        color: $text_color;
     }
 
     & p {
         margin: 80px 0 35px 0;
-        color: #942c0c;
+        color: $text_color;
         font-size: 1.5rem;
-        cursor: default;
     }
 
     & button {
@@ -238,19 +254,20 @@ nav {
 // A propos
 
 .propos {
-    background-image: url('/img/sushi.jpg');
-    height: 700px;
-    
+    background-image: url('/img/car.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 750px;
+    cursor: default;
     
     & h3, p {
         margin: auto;
-        
     }
 
     & h3 {
         font-family: 'Anton', sans-serif;
         letter-spacing: 3px;
-        padding: 25px 0;
+        padding: 45px 0;
         width: 26%;
         margin-bottom: 35px;
         font-size: 2rem;
@@ -266,12 +283,28 @@ nav {
     }
 }
 
+// Img menus
+
+
+
+
+.m_1 {
+    height: 1500px;
+}
+
+.m_2 {
+    height: 1500px;
+}
+.m_3 {
+    height: 1500px;
+}
+
 // footer 
 
 
 footer {
     width: 100%;
-    background-color: #000;
+    background-color: rgb(0, 0, 0);
     color: $text_color;
     text-align: center;
     cursor: default;
