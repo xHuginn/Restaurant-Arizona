@@ -171,7 +171,7 @@ nav {
 }
 
 .choice_1 {
-    background-image: url('/img/choice_1.jpg');
+    background-image: url('./img/choice_1.jpg');
     background-position: center;
     opacity: 0.5;
     content: "";
@@ -187,7 +187,7 @@ nav {
 }
 
 .choice_2 {
-    background-image: url('/img/pizza.jpg');
+    background-image: url('./img/pizza.jpg');
     background-position: center;
     opacity: 0.5;
     content: "";
@@ -254,7 +254,7 @@ nav {
 // A propos
 
 .propos {
-    background-image: url('/img/car.jpg');
+    background-image: url('./img/car.jpg');
     background-repeat: no-repeat;
     background-position: center;
     height: 750px;
