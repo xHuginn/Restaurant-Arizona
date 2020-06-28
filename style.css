@@ -240,16 +240,81 @@ nav .btn:hover::after {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.m_1 {
-  height: 1500px;
+.img_menu {
+  width: 850px;
 }
 
-.m_2 {
-  height: 1500px;
+.menu_img {
+  height: 1100px;
+  margin: 25px 0;
 }
 
-.m_3 {
-  height: 1500px;
+.ou h2, .tel h2, .infos, .horaire h2 {
+  font-family: "Anton", sans-serif;
+}
+
+.infos {
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+.infos aside img {
+  width: 450px;
+  margin: 15px;
+}
+.infos aside h4 {
+  font-size: 1.1rem;
+  margin: 25px;
+  text-align: center;
+  color: #c0702f;
+}
+.infos h2 {
+  color: #c0702f;
+}
+.infos h3 {
+  color: #a31010;
+}
+
+.infos_g {
+  margin-top: 25px;
+  margin-left: 25px;
+  margin-right: 50px;
+}
+.infos_g h1 {
+  font-size: 2.5rem;
+  color: #b40808;
+}
+.infos_g .horaire {
+  margin: 25px auto;
+}
+.infos_g .horaire ul {
+  width: 50%;
+  margin: auto;
+  margin-top: 15px;
+}
+.infos_g .horaire ul li {
+  display: flex;
+  justify-content: space-between;
+}
+.infos_g .ou {
+  margin: 55px;
+}
+.infos_g .tel {
+  margin: 55px;
+}
+.infos_g .divers {
+  width: 350px;
+  margin: 25px;
+  font-size: 1.5rem;
+}
+.infos_g .divers p {
+  text-align: left;
+  padding-left: 55px;
+  color: #faf5f5;
+}
+.infos_g .divers span {
+  font-weight: bold;
+  color: #a31010;
 }
 
 footer {
