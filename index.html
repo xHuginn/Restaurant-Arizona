@@ -3,7 +3,15 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="./css_anim_pics/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="./css_anim_pics/style.css">
+    
+    <script src="./js/jquery-2.1.0.js" defer></script>
+	<script src="./js/bootstrap.js" defer></script>
+	<script src="./js/blocs.js" defer></script>
+
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
@@ -24,7 +32,6 @@
                 <li><a class="active btn" href="index.html">Acceuil</a></li>
                 <li><a class="btn" href="contact.html">L'Arizona</a></li>
                 <li><a class="btn" href="menu.html">Menu</a></li>
-                <li><a class="btn" href="pics.html">Galerie photo</a></li>
                 <li><a class="btn" href="reservation.html">Reservez dès maintenant !</a></li>
             </ul>
         </nav>
@@ -53,7 +60,7 @@
     <article class="choice_2">
         <h2>Galerie photo</h3>
             <p>Lorem ipsum dolor sit amet consectetur.</p>
-        <button><a href="pics.html">Plus d'infos</a></button>
+        <button><a href="#galerie">Plus d'infos</a></button>
     </article>
 </section>
 
@@ -89,6 +96,19 @@
             sed est eligendi quia adipisci unde illo maiores? Ipsum eveniet ut veniam?</p>
 </section>
 
+
+
+
+<section class="galerie" id="galerie">
+    <img src="./img/banniere.jpg" data-lightbox="/img/banniere.jpg" alt="burger">
+    <img src="./img/galerie_1.jpg" data-lightbox="./img/galerie_1.jpg" alt="burger 2">
+    <img src="./img/galerie_2.jpg" data-lightbox="./img/galerie_2.jpg" alt="cocktail">
+    <img src="./img/galerie_3.jpg" data-lightbox="./img/galerie_3.jpg" alt="beer and burger">
+    <div class="resto">
+    <img class="pic_resto" src="./img/resto_1.jpg" data-lightbox="./img/resto_1.jpg" alt="resto 1">
+    <img src="./img/resto_2.jpg" data-lightbox="./img/resto_2.jpg" alt="resto 2">
+    </div>
+</section>
 
     <!-- Footer -->
 

@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e1a0844606.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -24,7 +25,6 @@
                 <li><a class="btn" href="index.html">Acceuil</a></li>
                 <li><a class="btn" href="contact.html">L'Arizona</a></li>
                 <li><a class="btn" href="menu.html">Menu</a></li>
-                <li><a class="btn" href="pics.html">Galerie photo</a></li>
                 <li><a class="active btn" href="reservation.html">Reservez dès maintenant !</a></li>
             </ul>
         </nav>
@@ -35,51 +35,87 @@
         <img src="./img/banniere_resto.jpg" alt="banner_resto">
     </div>
     
-    <div id="max-width">
+    <section class="max-width formulaire">
     <fieldset>
         <legend>
             <h3>Réservez dès maintenant !</h3>
             <p><small>Les * sont obligatoires</small></p>
         </legend>
     <form method="post">
-        <label for="nom">Votre nom<sup>*</sup></label>
+        <label for="nom">Votre nom <sup>*</sup></label>
         <input type="text" for="nom" name="nom" id="nom" required/>
 
-        <label for="mail">Votre email<sup>*</sup></label>
-        <input type="text" for="mail" name="mail" id="mail" required placeholder="votremail@mail.fr"/>
+        <label for="mail">Votre email </label>
+        <input type="text" for="mail" name="mail" id="mail" placeholder="votremail@mail.fr"/>
 
-        <label for="tel">Numéro de téléphone</label>
-        <input type="tel" for="tel" name="tel" id="tel" />
-
+        <label for="tel">Numéro de téléphone <sup>*</sup></label>
+        <input type="tel" for="tel" name="tel" id="tel" required />
+        <br>
         <label for="message" id="message">Un commentaire ? Ecrivez-le ici</label>
         <textarea id="message" name="message"></textarea>
 
         <button type="submit" id="button_1">Envoyer votre réservation</button>
     </form>
     </fieldset>
-    </div>
-
-    <section class="avis">
-        <img src="./img/client_1.jpg" alt="client_1">
-        <img src="./img/client_2.jpg" alt="client_2">
-        <img src="./img/client_3.jpg" alt="client_3">
-
-
-    </section>
-    
+    </section>    
    
-      
+    <section class="testimonials">
+            <div class="testimonials-content">
+                <h4>Ecoutez ce qu'ils pensent de nous</h4>
+                <div class="testimonials-elem">
+                    <div class="testimonials-elem-text">
+                        <div class="testimonials-elem-profil">
+                            <img src="./img/client_1.jpg" alt="Photo Vanessa">
+                            <p>Vanessa</p>
+                        </div>
+                        <p class="avis">
+                            <i class="fas fa-quote-left"></i>
+
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut modi amet tempora delectus nisi sint quas minima inventore ad repellendus earum alias consectetur consequatur enim natus dolor, repudiandae, eum ratione numquam sit molestias facilis officia dignissimos tenetur? Molestias, labore? Minus perspiciatis expedita numquam saepe quasi suscipit ratione aut magni voluptate.</p>
+                            <i class="fas fa-quote-right"></i>
+                            
+                    </div>
+                </div>
+
+                <div class="testimonials-elem">
+                    <div class="testimonials-elem-text">
+                        <div class="testimonials-elem-profil">
+                            <img src="./img/client_2.jpg" alt="Photo Henri">
+                            <p>Henri</p>
+                        </div>
+                        <p class="avis">
+                            <i class="fas fa-quote-left"></i>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, illum!</p>
+                            <i class="fas fa-quote-right"></i>
+                            
+                    </div>
+                </div>
+
+                <div class="testimonials-elem">
+                    <div class="testimonials-elem-text">
+                        <div class="testimonials-elem-profil">
+                            <img src="./img/client_3.jpg" alt="Photo Penelope">
+                            <p>Penelope</p>
+                        </div>
+                        <p class="avis">
+                            <i class="fas fa-quote-left"></i>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias sapiente possimus accusantium suscipit laudantium? Voluptatibus in aperiam, ad saepe perferendis animi cupiditate quis quidem modi, dolore quia, nostrum expedita. Expedita.</p>
+                            <i class="fas fa-quote-right"></i>
+                           
+                    </div>
+                </div>
+            </div>
+    </section>
            
 
-            <footer>
-               <div id="bloc_page">
+        <footer>
+            <div id="bloc_page">
                 <h3>Pouic pouic food restaurant</h3>
                 <address>125 rue du déssert <br />75000 Paris<br /> France</address>
                 <tel>04 000 000 000</tel>
                 <p>Copyright © Tous droits réservés.</p>
-                </div>
-    </footer>
-    <img src="img/fond_red.jpg" alt="red" id="fond_1"/>
+            </div>
+        </footer>
     </body>
 </html>
    

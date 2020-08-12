@@ -18,7 +18,7 @@
 }
 
 body {
-  background-color: #000;
+  background-color: #000000;
   color: #faf5f5;
   margin: 0;
   padding: 0;
@@ -120,6 +120,22 @@ nav .btn:hover::after {
   height: 275%;
 }
 
+footer {
+  width: 100%;
+  background-color: black;
+  color: #faf5f5;
+  text-align: center;
+  cursor: default;
+  margin-top: 25px;
+}
+footer h6, footer address, footer p {
+  margin: 15px;
+}
+footer h6 {
+  font-size: 2rem;
+  font-family: "Kaushan Script", cursive;
+}
+
 .accroche {
   height: 90px;
   font-size: 1.7rem;
@@ -133,8 +149,6 @@ nav .btn:hover::after {
 }
 
 .possibilities {
-  background: url("./img/fond_red.jpg") no-repeat fixed;
-  background-size: cover;
   height: 450px;
   display: flex;
   justify-content: space-between;
@@ -196,9 +210,8 @@ nav .btn:hover::after {
 }
 .choice_1 button, .choice_2 button {
   font-family: "Permanent Marker", sans-serif;
-  width: 120px;
-  align-self: center;
-  padding: 15px 9px;
+  width: 150px;
+  height: 40px;
   background: #a31010;
   color: #d6c1c1;
   font-size: 1rem;
@@ -208,11 +221,22 @@ nav .btn:hover::after {
   -webkit-border-radius: 15px;
   box-shadow: 8px 7px 19px -3px #000000bd;
   cursor: pointer;
+  content: "";
+  transition: all 0.6s;
 }
 .choice_1 button:hover, .choice_2 button:hover {
   background: #b40808;
+  animation: anim_button 0.4s infinite alternate;
 }
 
+@keyframes anim_button {
+  from {
+    transform: translateY(5px);
+  }
+  to {
+    transform: translateY(-5px);
+  }
+}
 .propos {
   background-image: url("./img/car.jpg");
   background-repeat: no-repeat;
@@ -240,6 +264,17 @@ nav .btn:hover::after {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+.galerie {
+  width: 1200px;
+  margin: auto;
+}
+
+.galerie img {
+  width: 450px;
+  height: 350px;
+  margin: 25px;
+}
+
 .img_menu {
   width: 850px;
 }
@@ -257,6 +292,10 @@ nav .btn:hover::after {
   display: flex;
   justify-content: center;
   font-size: 1.2rem;
+}
+.infos aside {
+  display: flex;
+  flex-direction: column;
 }
 .infos aside img {
   width: 450px;
@@ -288,7 +327,7 @@ nav .btn:hover::after {
   margin: 25px auto;
 }
 .infos_g .horaire ul {
-  width: 50%;
+  width: 80%;
   margin: auto;
   margin-top: 15px;
 }
@@ -321,24 +360,111 @@ nav .btn:hover::after {
   width: 550px;
 }
 
-.galerie img {
-  width: 550px;
+.formulaire {
+  font-family: "Kaushan Script", "Arial Narrow", Arial, sans-serif;
+  font-weight: normal;
+  margin: 50px auto;
+}
+.formulaire legend {
+  text-align: left;
+  font-size: 1.7rem;
+}
+.formulaire legend p {
+  font-size: 1.3rem;
+}
+.formulaire form label {
+  font-size: 1.5rem;
+  margin: 10px;
+}
+.formulaire form input {
+  height: 25px;
 }
 
-footer {
-  width: 100%;
-  background-color: black;
+#button_1 {
+  background-color: #c0702f;
   color: #faf5f5;
-  text-align: center;
-  cursor: default;
+  margin-left: 25px;
+  border-radius: 6px;
+}
+#button_1:hover {
+  color: #1ca310;
+  background: #013007;
+}
+
+textarea {
   margin-top: 25px;
 }
-footer h6, footer address, footer p {
-  margin: 15px;
+
+button {
+  margin: 10px auto;
+  height: 35px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: none;
+  background-color: black;
+  color: white;
 }
-footer h6 {
-  font-size: 2rem;
-  font-family: "Kaushan Script", cursive;
+button:hover {
+  color: black;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.testimonials {
+  padding: 5rem 1rem;
+  width: 70%;
+  margin: auto;
+}
+
+.testimonials-content {
+  display: flex;
+  flex-direction: column;
+}
+.testimonials-content h4 {
+  font-family: "Kaushan Script", "Arial Narrow", Arial, sans-serif;
+  margin: 0 auto 25px;
+  font-size: 1.8rem;
+}
+
+.testimonials-elem {
+  flex: 1;
+  background: #c0702f;
+  border-radius: 5px;
+  padding: 1.2rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.testimonials-elem-text {
+  padding: 0 2rem;
+  display: flex;
+}
+
+.testimonials-elem-text p i {
+  margin: 0.2rem;
+}
+
+.avis {
+  font-size: 1.2rem;
+  color: #faf5f5;
+  width: 80%;
+  margin-left: 50px;
+}
+
+.testimonials-elem-profil p {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.testimonials-elem-profil img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
