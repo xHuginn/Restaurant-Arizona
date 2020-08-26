@@ -461,6 +461,11 @@ footer {
     font-family: 'Kaushan Script', 'Arial Narrow', Arial, sans-serif;
     font-weight: normal;
     margin: 50px auto;
+
+    & fieldset {
+        border: 1px solid #663c13;
+    }
+
     & legend {
         text-align: left;
         font-size: 1.7rem;

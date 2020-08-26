@@ -350,6 +350,9 @@ footer h6 {
   font-weight: normal;
   margin: 50px auto;
 }
+.formulaire fieldset {
+  border: 1px solid #663c13;
+}
 .formulaire legend {
   text-align: left;
   font-size: 1.7rem;
