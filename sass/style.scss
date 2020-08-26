@@ -39,7 +39,7 @@
 }
 
 body {
-    background-color: #000000;
+    background-color: $bg_color;
     color: $text_color;
     margin: 0;
     padding: 0;
@@ -87,7 +87,7 @@ header {
     justify-content: space-between;
     font-family: 'Kaushan Script', cursive;
     position: fixed;
-    background-color: #000;
+    background-color: $bg_color_header;
     height: 64px;
     width: 100%;
     z-index: 1;
@@ -122,9 +122,9 @@ nav {
         display: block;
         font-family: "Anton", sans-serif;
         text-decoration: none;
-        margin: 30px 0;
-        border: 2px solid $bg_color;
-        padding: 18px 10px;
+        margin: 25px 0;
+        // border-bottom: 2px solid $bg_color;
+        padding: 20px 10px;
         text-transform: uppercase;
         overflow: hidden;
     }
@@ -153,14 +153,13 @@ nav {
 
 footer {
     width: 100%;
-    background-color: rgb(0, 0, 0);
+    background-color: $bg_color_header;
     color: $text_color;
     text-align: center;
     cursor: default;
-    margin-top: 25px;
 
     & h6, address, p {
-        margin: 15px;
+        padding: 8px;
     }
 
     & h6 {
@@ -256,14 +255,9 @@ footer {
         color: $text_color;
     }
 
-    & p {
-        margin: 80px 0 35px 0;
-        color: $text_color;
-        font-size: 1.5rem;
-    }
-
     & button {
         font-family: 'Permanent Marker', sans-serif;
+        margin-top: 180px;
         width: 150px;
         height: 40px;
         background: #a31010;
@@ -280,18 +274,7 @@ footer {
     }
 
     & button:hover {
-        background: #b40808;
-        animation: anim_button 0.4s infinite alternate;
-    }
-}
-
-@keyframes anim_button {
-    from {
-        transform: translateY(5px);
-    }
-
-    to {
-        transform: translateY(-5px);
+        background: #3d0303;
     }
 }
 // A propos
@@ -557,7 +540,7 @@ button {
 
 .testimonials-elem {
     flex: 1;
-    background: $bg_color;
+    background: $bg_color_header;
     border-radius: 5px;
     padding: 1.2rem;
     display: flex;
@@ -606,13 +589,35 @@ button {
 
 
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//     MENTIONS LEGALES                                                                                                 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
+.mentions_legales {
+    & p {
+        font-size: 1rem;
+        text-align: justify;
+    }
 
+    & h6 {
+        font-size: 1.5rem;
+        margin: 15px;
+    }
 
+    & ul {
+        font-size: 1rem;
+        margin: 10px;
+    }
+}
 
-
-
+.last {
+    margin-bottom: 15px;
+}
 
 
 
